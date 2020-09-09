@@ -21,6 +21,7 @@ $ ../qemu-3.0.0/configure --python=python3 --target-list="arm-softmmu" --disable
 $ make
 ```
    Then, `qemu-system-arm` can be found in this build directory and the path is: `arm-softmmu/qemu-system-arm`. Put `qemu-system-arm` in PATH.
+   
 3. Download [ARM GCC toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) and put it in PATH.
 4. Install angr. 
    - Install angr dependencies.
