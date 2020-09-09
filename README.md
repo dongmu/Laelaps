@@ -7,18 +7,20 @@
 
 
 ## Installation
-Make sure Python 3 is used.
+Make sure Ubuntu 18.04 and Python 3 are used.
 
 1. Install [Python virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) and create a virtual environment `laelaps`. All the following steps are operated inside this virtual environment. So, execute this command first.
 ```
 $ workon laelaps
 ```
-2. Build qemu-3.0.0 and put `qemu-system-arm` in PATH.
+2. Build qemu-3.0.0.
 ```
 $ sudo apt-get build-dep -y qemu
 $ mkdir ../build && cd ../build
 $ ../qemu-3.0.0/configure --python=python3 --target-list="arm-softmmu" --disable-vnc --disable-curses --disable-sdl --disable-hax --disable-rdma --enable-debug
+$ make
 ```
+Then, `qemu-system-arm` can be found in this build directory and the path is: `arm-softmmu/qemu-system-arm`. Put `qemu-system-arm` in PATH.
 3. Download [ARM GCC toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) and put it in PATH.
 4. Install angr. 
    - Install angr dependencies.
