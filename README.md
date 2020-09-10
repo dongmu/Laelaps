@@ -39,21 +39,17 @@ $ make
 ```
 patch -p1 < $(root_of_this_repo)/p.patch
 ```
-6. Install dependencies with `pip`.
-```
-$ pip install -r laelapsdep
-```
-7. Install avatar2.
+6. Install avatar2.
 ```
 $ cd avatar2
 $ pip install -e ./
 ```
-8. Install concolic.
+7. Install concolic.
 ```
 $ cd concolic
 $ pip install -e ./
 ```
-9. Run tests in `proj` directory.
+8. Run tests in `proj` directory.
 
 
 ## Example
