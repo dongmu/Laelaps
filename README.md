@@ -35,23 +35,9 @@ $ make
      $ cd angr-8.19.2.4
      $ pip install -e ./
      ```
-5. Patch angr. Apply the following patch.
+5. CD to the root directory of angr and patch it using the following command.
 ```
---- a/angr/state_plugins/plugin.py
-+++ b/angr/state_plugins/plugin.py
-@@ -20,7 +20,11 @@ class SimStatePlugin(object):
-         """
-         Sets a new state (for example, if the state has been branched)
-         """
--        self.state = state._get_weakref()
-+        from angr.state_plugins import SimStateHistory
-+        if isinstance(self, SimStateHistory):
-+            self.state = state._get_strongref()
-+        else:
-+            self.state = state._get_weakref()
-
-     def set_strongref_state(self, state):
-         pass
+patch -p1 < $(root_of_this_repo)/p.patch
 ```
 6. Install the following dependencies with `pip`.
 ```
