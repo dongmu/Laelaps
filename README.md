@@ -39,19 +39,9 @@ $ make
 ```
 patch -p1 < $(root_of_this_repo)/p.patch
 ```
-6. Install the following dependencies with `pip`.
+6. Install dependencies with `pip`.
 ```
-numpy
-pygdbmi==0.9.0.0
-intervaltree
-posix_ipc>=1.0.0
-capstone>=3.0.4
-keystone-engine
-parse
-configparser
-npyscreen
-enum34
-unicorn
+$ pip install -r laelapsdep
 ```
 7. Install avatar2.
 ```
