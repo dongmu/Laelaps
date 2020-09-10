@@ -22,7 +22,7 @@ $ make
 ```
    Then, `qemu-system-arm` can be found in this build directory and the path is: `arm-softmmu/qemu-system-arm`. Put `qemu-system-arm` in PATH.
    
-3. Download [ARM GCC toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) and put it in PATH.
+3. Download [ARM GCC toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads). The URL can be found at https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2. Unzip it and put the `bin` directory in PATH.
 4. Install angr. 
    - Install angr dependencies.
      ```
