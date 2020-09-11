@@ -96,7 +96,7 @@ if __name__ == "__main__":
     avatar.init_targets()
 
     logger.info("[+] Running in QEMU until a peripherial is accessed")
-    qemu.set_breakpoint(0xec6)
+    qemu.set_breakpoint(0xeba)
 
 
     qemu.cont()
