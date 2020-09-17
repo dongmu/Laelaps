@@ -5,8 +5,15 @@
 1. To test a new firmware, create a directory in the ```proj``` directory. The general naming rule is ```proj_devicename_appname```.
 2. The last worked version of Angr is `8.19.2.4`.
 
+## Docker Installation
+A docker image with Lealaps installation has been created for testing purporses.
+```
+docker pull guanleustc/laelaps:1.0
+docker run -it guanleustc/laelaps:1.0 /bin/bash
+```
+The image was build with the [provide Dockerfile](https://github.com/dongmu/Laelaps/edit/master/Dockerfile) in this repo.
 
-## Installation
+## Souce Code Installation
 Make sure Ubuntu 18.04 and Python 3 are used.
 
 1. Install [Python virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) and create a virtual environment `laelaps`. All the following steps are operated inside this virtual environment. So, execute this command first.
