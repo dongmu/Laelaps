@@ -5,6 +5,9 @@
 1. To test a new firmware, create a directory in the ```proj``` directory. The general naming rule is ```proj_devicename_appname```.
 2. The last worked version of Angr is `8.19.2.4`.
 
+## Release
+This [release](https://github.com/dongmu/Laelaps/releases/tag/091720) is a VMware Workstation Virtual Machine of Ubuntu 18.04, which has Laelaps and its running environment.
+
 ## Docker Installation
 A docker image with Lealaps installation has been created for testing purporses.
 ```
