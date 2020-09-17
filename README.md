@@ -16,7 +16,7 @@ $ workon laelaps
 2. Build qemu-3.0.0.
 ```
 $ sudo apt-get build-dep -y qemu
-$ mkdir ../build && cd ../build
+$ mkdir ./build && cd ./build
 $ ../qemu-3.0.0/configure --python=python3 --target-list="arm-softmmu" --disable-vnc --disable-curses --disable-sdl --disable-hax --disable-rdma --enable-debug
 $ make
 ```
