@@ -11,7 +11,7 @@ A docker image with Lealaps installation has been created for testing purporses.
 docker pull guanleustc/laelaps:1.0
 docker run -it guanleustc/laelaps:1.0 /bin/bash
 ```
-The image was build with the [provide Dockerfile](https://github.com/dongmu/Laelaps/edit/master/Dockerfile) in this repo.
+The image was build with the [provided Dockerfile](https://github.com/dongmu/Laelaps/edit/master/Dockerfile) in this repo.
 
 ## Souce Code Installation
 Make sure Ubuntu 18.04 and Python 3 are used.
