@@ -16,7 +16,7 @@ docker run -it guanleustc/laelaps:1.0 /bin/bash
 ```
 The image was build with the provided [Dockerfile](https://github.com/dongmu/Laelaps/edit/master/Dockerfile) and [installation script](https://github.com/dongmu/Laelaps/edit/master/dockerbuild.sh) in this repo.
 
-## Souce Code Installation
+## Source Code Installation
 Make sure Ubuntu 18.04 and Python 3 are used.
 
 1. Install [Python virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) and create a virtual environment `laelaps`. All the following steps are operated inside this virtual environment. So, execute this command first.
@@ -34,11 +34,7 @@ $ make
    
 3. Download [ARM GCC toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads). The URL can be found at https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2. Unzip it and put the `bin` directory in PATH.
 4. Install angr. 
-   - Install angr dependencies.
-     ```
-     $ pip install angr==8.19.2.4; pip uninstall angr
-     ```
-   - Download angr's source code from PyPI and install angr from the source code.
+   - Download angr source code and install it.
      ```
      $ wget https://files.pythonhosted.org/packages/35/19/07442cc5789f6c40eae7ea2bd34a04402fa94f9e3d94cba0ab8354d231cf/angr-8.19.2.4.tar.gz
      $ tar xf angr-8.19.2.4.tar.gz
