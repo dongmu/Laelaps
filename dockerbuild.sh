@@ -4,7 +4,7 @@
 cp /etc/apt/sources.list /etc/apt/sources.list~
 sed -Ei 's/^# deb-src /deb-src /' /etc/apt/sources.list
 apt-get update
-apt-get install python3 python3-pip vim wget python3-dev libffi-dev build-essential -y
+apt-get install python3 python3-pip vim wget python3-dev libffi-dev build-essential psmisc -y
 update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 10
 
